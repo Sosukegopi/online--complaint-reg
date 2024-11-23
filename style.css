@@ -1,0 +1,112 @@
+.navbar .logo-title {
+  font-style: italic;
+  font-weight: 800;
+  color: blue;
+}
+.navbar .nav-link {
+  font-weight: 400;
+  color: #0d6efd !important;
+}
+.navbar .nav-link:hover {
+  color: rgb(30, 0, 255) !important;
+  text-decoration: underline;
+}
+/* home */
+#home {
+  background: url("../images/home-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+#home #quotes {
+  width: 60%;
+  padding: 2%;
+  background-color: rgba(245, 245, 245, 0.737);
+  border-radius: 5px;
+  color: #0349b1;
+  font-family:Arial, Helvetica, sans-serif;
+  /* letter-spacing: 1px; */
+  word-spacing: 5px;
+}
+#home #quotes h3 {
+  font-size: 1.5rem;
+    line-height: 40px;
+
+}
+@media only screen and (max-width: 600px) {
+  #home #quotes {
+    width: 80%;
+  }
+  #home #quotes h3 {
+    font-size: 1.2rem;
+  }
+}
+/* About-us */
+#About-us {
+  padding: 5% 4%;
+}
+#About-us h3,
+#your-responsibility h3 {
+  text-align: center;
+  margin-bottom: 2%;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+#About-us p {
+  text-align: center;
+  word-spacing: 2px;
+  font-size: 1.1rem;
+  color: rgb(99, 99, 99);
+}
+@media only screen and (max-width: 600px) {
+  #About-us p {
+    font-size: 1rem;
+  }
+}
+/* #your-responsibility */
+#your-responsibility {
+  padding: 5%;
+  background-color: #f1f1f1bd;
+}
+#your-responsibility h6{
+  color: #484745;
+}
+#your-responsibility p{
+  color: #595856f8;
+}
+#your-responsibility img {
+  border-radius: 5px;
+}
+/* footer */
+#footer {
+  padding-top: 3%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#footer-socialmedia {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  cursor: pointer;
+  color: #595856;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#footer-socialmedia p:hover {
+  color: rgb(0, 0, 0);
+}
+#footer-logo h3 {
+  font-style: italic;
+  font-weight: 800;
+  color: blue;
+}
+.copyright{
+  text-align: center;
+  padding-bottom: 1%;
+}

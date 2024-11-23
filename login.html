@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User | Login</title>
+    <link
+      rel="shortcut icon"
+      href="../../images/logo.png"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(210, 232, 252);
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="w-full max-w-md p-8 space-y-3 rounded-xl bg-gray-50 text-gray-800"
+    >
+      <h1 class="text-2xl font-bold text-center">Login</h1>
+      <form
+        method="post"
+        action="/user/login"
+        class="space-y-6 ng-untouched ng-pristine ng-valid"
+      >
+        <div class="space-y-1 text-sm">
+          <label for="username" class="block text-gray-600">Username</label>
+          <input
+            
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Username"
+            class="w-full px-4 py-3 rounded-md border-gray-300 bg-gray-50 text-gray-800 focus:border-sky-600"
+     required     />
+        </div>
+        <div class="space-y-1 text-sm">
+          <label for="password" class="block text-gray-600">Password</label>
+          <input
+            
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            class="w-full px-4 py-3 rounded-md border-gray-300 bg-gray-50 text-gray-800 focus:border-sky-600"
+     required     />
+        </div>
+        <button
+          type="submit"
+          class="block w-full p-3 text-center rounded-sm text-gray-50 bg-sky-600"
+        >
+          Login
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

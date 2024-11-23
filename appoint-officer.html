@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FixIt | Register Complaint</title>
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  </head>
+  <body>
+    <h3 style="font-family: 'Courier New', Courier, monospace; text-transform: uppercase; font-weight: 900; text-align: center; margin-top: 10px">Appoint Officer</h3>
+    <div class="container" style="min-height: 70vh; display: flex; justify-content: center; align-items: center">
+      <form action="/appoint-officer" method="post" class="p-5" style="width: 40%" enctype="multipart/form-data">
+        <div class="form-floating mb-3">
+          <input type="text" name="officerName" class="form-control" id="floatingInput" placeholder="Officer Name" required />
+          <label for="floatingInput">Officer Name</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="email" name="officerEmail" class="form-control" id="floatingPassword" placeholder="email Id" required />
+          <label for="floatingPassword">Email Id</label>
+        </div>
+        <div class="input-group flex-nowrap mb-3">
+          <span class="input-group-text" id="addon-wrapping">+ 91</span>
+          <input type="text" class="form-control" placeholder="Phone No"  aria-describedby="addon-wrapping" name="officerPhone" pattern="[0-9]{10}" required />
+        </div>
+        <div class="form-floating mb-3">
+          <input type="text" name="officerId" class="form-control" id="floatingPassword" placeholder="Officer Id" pattern="[0-9]{6}" required />
+          <label for="floatingPassword">6 digit Officer Id</label>
+        </div>
+        <div class="mb-3"><label class="input-group-text" for="photo">Select Aadhaar Proof :</label><input type="file" class="form-control" id="photo" name="aadhaar" required /></div>
+        <div class="mb-3">
+          <input class="form-check-input" type="checkbox" id="gridCheck" required />
+          <label class="form-check-label" for="gridCheck">
+            I agree to
+            <a href="" style="text-decoration: none">terms and conditions</a>
+          </label>
+        </div>
+
+        <div class="d-flex justify-content-end"><button type="submit" class="btn btn-outline-success btn-sm">Appoint Officer</button></div>
+      </form>
+    </div>
+  </body>
+</html>
